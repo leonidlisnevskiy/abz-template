@@ -1,0 +1,147 @@
+body
+	background: $white
+	// +css-lock(14, 50, 600, 1000)
+	line-height: 1.4
+	+font-family($gotham-light)
+	height: 100%
+	font-size: $text-sm //14px
+	color: #062135
+	font-weight: normal
+
+.is-open
+	.logo svg
+		fill: $dark
+	.header__nav
+		transform: translateX(0%)
+
+.is-fixed
+	.header
+		position: fixed
+		background-color: $white
+	.menu__lang,
+	.menu__header
+		color: $dark
+	.logo svg
+		fill: $dark
+
+
+.slider
+	+clr
+	font-size: 0
+	position: relative
+
+// Typography
+h1, h2, h3, h4, h5, h6, p, strong, em
+	font-weight: normal
+	font-style: normal
+
+.scroll-down
+	position: absolute
+	top: 318px
+	font-size: 12px
+	right: -24px
+	color: rgba($gray, .40)
+	+font-family($gotham-light)
+	letter-spacing: 0.200rem
+	text-transform: uppercase
+	text-decoration: none
+	cursor: pointer
+	outline: none
+	transform: rotateZ(-90deg)
+	z-index: 10
+	transition: color .34s ease-in-out
+	&:hover
+		color: $coffee
+	i
+		display: block
+		position: absolute
+		top: -50px
+		left: -55%
+		transform: rotateZ(90deg)
+
+// Head-picture
+.head-pic
+	display: inline-block
+	vertical-align: top
+	position: absolute
+	top: 0
+	right: -350px
+	padding-bottom: 82.50%
+	+cover
+	width: 100%
+	max-width: 866px
+	+r(1220)
+		max-width: 670px
+		padding-bottom: 68.42%
+		right: -250px
+	+r(992)
+		padding-bottom: 75%
+		max-width: 470px
+		right: -170px
+	img
+		height: auto
+		max-width: 100%
+
+// Logo
+.logo
+	text-decoration: none
+	width: 133px
+	height: 51.031px
+	display: inline-block
+	vertical-align: top
+	position: relative
+	svg
+		transition: fill .24s ease-in-out
+		fill: $white
+		width: 100%
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		height: 100%
+
+.title
+	&-shaped
+		position: relative
+		color: $coffee
+		font-size: $text-xs //12px
+		+font-family($gotham-reg)
+		display: inline-block
+		vertical-align: top
+		text-transform: uppercase
+		letter-spacing: 0.2em
+		padding-left: 40px
+		&:before,
+		&:after
+			content: ''
+			display: block
+			position: absolute
+		&:before
+			background-color: $coffee
+			width: 61px
+			right: 100%
+			height: 1px
+			top: 50%
+		&:after
+			border-radius: 50px
+			width: 9px
+			background-color: transparent
+			border: 1px solid $coffee
+			height: 9px
+			top: 4.5px
+			transform: translateX(90%)
+			right: 100%
+	&-lead
+		+font-family($gotham-reg)
+		text-transform: uppercase
+		letter-spacing: 0.04em
+		font-weight: normal
+		font-style: normal
+		font-size: 48px
+		color: $white
+		line-height: 1.23
+		+md
+			line-height: 1.4
+			font-size: 43px
+
