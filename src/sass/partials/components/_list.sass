@@ -1,0 +1,39 @@
+.list
+	font-size: 0
+	&-service
+		border: 1px solid $separator
+		border-radius: 4px
+		padding: 15px 0
+		text-align: center
+		li
+			display: inline-block
+			vertical-align: top
+			width: 33%
+			height: 215px
+			padding: 0 9px
+		li a
+			text-decoration: none
+			color: $blue-darker
+			font-size: 13.61px
+			line-height: 1.25
+			display: block
+			transition: color .24s ease-in-out
+			text-align: center
+			.icon-box
+				transition: background-color .24s ease-in-out
+				display: block
+				height: 140px
+				border: 1px solid $separator
+				position: relative
+				margin-bottom: 10px
+				i
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+			&:hover
+				color: $green
+				.icon-box
+					background-color: #f4f7fb
+
+

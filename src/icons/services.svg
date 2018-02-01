@@ -1,0 +1,6 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="19" height="24" viewBox="0 0 19 24">
+  <title>services</title>
+  <g id="Services">
+    <path d="M407.5,388h-16a1.5,1.5,0,0,0-1.5,1.5v21a1.5,1.5,0,0,0,1.5,1.5h16a1.5,1.5,0,0,0,1.5-1.5v-21A1.5,1.5,0,0,0,407.5,388Zm0.5,22.5a0.5,0.5,0,0,1-.5.5h-16a0.5,0.5,0,0,1-.5-0.5v-21a0.5,0.5,0,0,1,.5-0.5h16a0.5,0.5,0,0,1,.5.5v21ZM393,397h13v-2H393v2Zm4-4h9v-2h-9v2Zm-4,16h13v-2H393v2Zm0-4h13v-2H393v2Zm0-4h13v-2H393v2Z" transform="translate(-390 -388)" style="fill: #c7cdd9"/>
+  </g>
+</svg>

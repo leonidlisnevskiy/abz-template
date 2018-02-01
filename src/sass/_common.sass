@@ -1,16 +1,11 @@
 body
 	background: $white
 	// +css-lock(14, 50, 600, 1000)
-	line-height: 1.4
 	height: 100%
-	font-size: $text-sm //14px
-	color: #062135
+	font-size: $text-reg //16px
+	+font-family($proxima-reg)
 	font-weight: normal
-
-//STATES
-// .is-open
-// .is-active
-
+	font-style: normal
 
 
 // Typography
@@ -21,3 +16,12 @@ h1, h2, h3, h4, h5, h6, p, strong, em
 
 
 // Logo
+.logo
+	float: left
+	font-size: 0
+	img
+		max-width: 100%
+		height: auto
+
+
+
