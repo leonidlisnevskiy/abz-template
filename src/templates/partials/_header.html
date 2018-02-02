@@ -2,9 +2,19 @@
 	<div class="inner">
 		<a href="page.html" class="logo" title="Home"><img src="img/logo.png" alt="Company Denteez Logo"></a>
 
-		<div class="search">
+		<div class="header__search">
 			<div class="icon-centered">{{mixins.icon('search')}}</div>
 			<input type="text" class="input" placeholder="Company Name">
+		</div>
+
+		<div class="header__bar">
+			<a href="#" class="header__bar-link"><span class="header__bar-icon">{{mixins.icon('chat')}}</span></a>
+			<a href="#" class="header__bar-link"><span class="header__bar-icon">{{mixins.icon('notify')}}</span></a>
+		</div>
+
+		<div class="header__user">
+			<div class="header__user-ava"><img src="img/ava.png" alt="user avatar"></div>
+			<a  href="#" class="header__user-name">Maximillian Beekeeper</a>
 		</div>
 	</div>
 </header>
