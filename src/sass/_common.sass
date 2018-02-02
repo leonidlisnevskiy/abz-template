@@ -6,6 +6,8 @@ body
 	+font-family($proxima-reg)
 	font-weight: normal
 	font-style: normal
+	min-width: 970px
+	max-width: 1440px
 
 
 // Typography
@@ -32,4 +34,78 @@ h1, h2, h3, h4, h5, h6, p, strong, em
 		height: auto
 
 
+// post
+.post
+	text-align: left
+	font-size: $text-sm //14px
+	+clr
+	display: inline-block
+	vertical-align: top
+	width: 100%
+	padding-top: 15px
+	&__title
+		color: $blue-gray
+		display: inline-block
+		margin-bottom: 15px
+	&__link
+		float: right
+		text-decoration: none
+		color: $blue-darker
+		transition: color .24s ease-in-out
+		a:hover
+			text-decoration: underline
+			color: darken($blue-darker, 20)
+	&__field
+		font-size: 0
+		+clr
+		margin-bottom: 20px
+		> .post__name
+			margin-bottom: 5px
+	&__img
+		width: 80px
+		height: 80px
+		overflow: hidden
+		display: inline-block
+		vertical-align: top
+		border-radius: 3px
+		position: relative
+		float: left
+		margin-right: 10px
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+	&__desc
+		display: table-cell
+		line-height: 1.33
+		&-link
+			font-size: $text-xs
+			color: $blue-darker
+			text-decoration: none
+	&__name
+		color: $blue-darker
+		display: block
+		font-size: $text-reg //16px
+	&__text
+		color: $blue-gray
+		font-size: $text-sm //14px
 
+// footer
+.footer
+	font-size: $text-xs //12px
+	color: #b7bfcd
+	text-align: left
+	margin-top: 15px
+	p
+		margin-bottom: 17px
+	&__link
+		display: inline-block
+		vertical-align: top
+		color: inherit
+		margin-right: 20px
+		transition: color .24s ease-in-out
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+			color: $green-darker
