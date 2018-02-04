@@ -14,14 +14,14 @@
 	max-width: 215px
 	display: inline-block
 	vertical-align: top
-	&__left
+	&.sidebar__left
 		float: left
-		.banner
-			margin-bottom: 20px
 		.post
 			border-top: 1px solid $separator
 			border-bottom: 1px solid $separator
-	&__right
+		.banner
+			margin-bottom: 20px
+	&.sidebar__right
 		float: right
 		.post
 			border-bottom: 1px solid $separator
@@ -34,7 +34,12 @@
 	text-align: left
 	&__btn
 		float: right
-
+	&__title
+		color: $blue-darker
+		display: inline-block
+		vertical-align: top
+		+text-overflow
+		max-width: 65%
 // banner
 .banner
 	text-decoration: none

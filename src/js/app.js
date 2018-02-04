@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import svg4everybody from 'svg4everybody';
+
 // import formvalidator from 'jquery-form-validator';
 
 // $('.js-btn-nav').click(function(event) {
@@ -9,6 +11,8 @@ import $ from 'jquery';
 //     $('.js-header').removeClass('is-open');
 //   }
 // });
+
+svg4everybody();
 
 $(document).ready(function() {
 
@@ -22,5 +26,4 @@ $(document).ready(function() {
       $(this).attr('placeholder', placeholder);
     });
   });
-
 });
