@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Index page</title>
+    <title>abz.agency test task</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -15,20 +15,22 @@
     <div class="out">
       <header class="header">
         <div class="inner"> <a href="page.html" class="logo" title="Home"></a>
-          <div class="search"> <svg class="search__icon icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg> <input type="text" class="search__input" placeholder="Company Name"> </div>
-          <div class="header__bar"> <a href="#" class="header__bar-link"><span class="header__bar-icon">
+          <div class="search"> <input type="text" class="search__input" placeholder="Company Name"> <svg class="search__icon icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg> </div>
+          <div class="header__bar"> <a href="#" class="header__bar-link">
 <svg class=" icon icon-chat"><use xlink:href="img/sprite.svg#icon-chat"></use></svg>
-</span></a> <a href="#" class="header__bar-link"><span class="header__bar-icon">
+</a> <a href="#" class="header__bar-link">
 <svg class=" icon icon-notify"><use xlink:href="img/sprite.svg#icon-notify"></use></svg>
-</span></a> </div>
-          <div class="header__user">
-            <div class="header__user-ava"><img src="img/ava.png" alt="user avatar"></div> <a href="#" class="header__user-name">Maximillian Beekeeper</a> </div>
+</a> </div>
+          <a href="#" class="header__user">
+            <div class="header__user-ava" style="background-image: url('../img/ava.png');"></div>
+            <div class="header__user-name">Maximillian Beekeeper</div>
+          </a>
         </div>
       </header>
       <!-- END .header -->
       <main class="main">
         <div class="inner">
-          <aside class="sidebar sidebar__left">
+          <aside class="sidebar sidebar_left">
             <ul class="menu">
               <li class="menu__item">
                 <a href="#" class="menu__link">
@@ -47,212 +49,190 @@
                   <div class="menu__icon"> <svg class=" icon icon-services"><use xlink:href="img/sprite.svg#icon-services"></use></svg> </div>Service Directory</a>
               </li>
             </ul>
+            <!-- END .menu -->
             <div class="banner">
-              <div class="banner__title">Advertisement</div>
-              <div class="banner__img" style="background-image: url('img/banner-00.jpg');"></div> <small class="banner__caption">Ads By <a href="#">Denteez.com</a></small> </div>
-            <div class="post">
-              <div class="post__title">Featured Companies</div> <a href="#" class="post__link">See All</a>
-              <div class="post__field">
-                <div class="post__img"><img src="img/photo-03.png" alt=""></div>
+              <div class="banner__title">Advertisement</div> <a href="#" class="banner__img" style="background-image: url('img/banner-00.jpg');"></a> <small class="banner__caption">Ads By <a href="#">Denteez.com</a></small> </div>
+            <div class="posts">
+              <div class="posts__title">Featured Companies</div> <a href="#" class="posts__link">See All</a>
+              <div class="post"> <a href="#" class="post__img" style="background-image: url('../img/photo-00.png')"></a>
                 <div class="post__desc">
-                  <div class="post__name">Company Name</div>
-                  <div class="post__text">Manufacturer</div>
-                  <div class="post__text">Belgrade, Serbia</div> <a href="#" class="post__desc-link">Follow Now</a> </div>
+                  <div class="post__name">Company Name</div> <a href="#" class="post__text">Manufacturer</a> <a href="#" class="post__text">Belgrade, Serbia</a> <a href="#" class="post__desc-link">Follow Now</a> </div>
               </div>
-              <div class="post__field">
-                <div class="post__img"><img src="img/photo-04.png" alt=""></div>
+              <div class="post"> <a href="#" class="post__img" style="background-image: url('../img/photo-01.png')"></a>
                 <div class="post__desc">
-                  <div class="post__name">Company Name</div>
-                  <div class="post__text">Service Provider</div>
-                  <div class="post__text">New York, USA</div> <a href="#" class="post__desc-link">Follow Now</a> </div>
+                  <div class="post__name">Company Name</div> <a href="#" class="post__text">Service Provider</a> <a href="#" class="post__text">New York, USA</a> <a href="#" class="post__desc-link">Follow Now</a> </div>
               </div>
-              <div class="post__field">
-                <div class="post__img"><img src="img/photo-05.png" alt=""></div>
+              <div class="post"> <a href="#" class="post__img" style="background-image: url('../img/photo-02.png')"></a>
                 <div class="post__desc">
-                  <div class="post__name">Company Name</div>
-                  <div class="post__text">Supplier</div>
-                  <div class="post__text">London, England</div> <a href="#" class="post__desc-link">Follow Now</a> </div>
+                  <div class="post__name">Company Name</div> <a href="#" class="post__text">Supplier</a> <a href="#" class="post__text">London, England</a> <a href="#" class="post__desc-link">Follow Now</a> </div>
               </div>
             </div>
+            <!-- END .posts -->
             <footer class="footer">
               <p>Denteez Copyright 2015</p> <a href="#" class="footer__link">Terms of use</a> <a href="#" class="footer__link">Privacy Policy</a> </footer>
           </aside>
-          <!-- END .sidebar__left -->
-          <aside class="sidebar sidebar__right">
-            <div class="post">
-              <div class="post__title">People you may know</div> <a href="#" class="post__link">See All</a>
-              <div class="post__field">
-                <div class="post__name">Dennis Adams</div>
-                <div class="post__img"><img src="img/photo-01.png" alt=""></div>
-                <div class="post__desc">
-                  <div class="post__text">Dentist (Practice Owner)</div>
-                  <div class="post__text">London, England</div> <a href="#" class="post__desc-link">Add Friend</a> </div>
+          <!-- END .sidebar_left -->
+          <aside class="sidebar sidebar_right">
+            <div class="posts">
+              <div class="posts__title">People you may know</div> <a href="#" class="posts__link">See All</a>
+              <div class="post">
+                <div class="post__name">Dennis Adams</div> <a href="#" class="post__img" style="background-image: url('../img/photo-03.png')"></a>
+                <div class="post__desc"> <a href="#" class="post__text">Dentist (Practice Owner)</a> <a href="#" class="post__text">London, England</a> <a href="#" class="post__desc-link">Add Friend</a> </div>
               </div>
-              <div class="post__field">
-                <div class="post__name">Dennis Adams</div>
-                <div class="post__img"><img src="img/photo-01.png" alt=""></div>
-                <div class="post__desc">
-                  <div class="post__text">Dentist (Practice Owner)</div>
-                  <div class="post__text">London, England</div> <a href="#" class="post__desc-link">Add Friend</a> </div>
+              <div class="post">
+                <div class="post__name">Mary Carpenter</div> <a href="#" class="post__img" style="background-image: url('../img/photo-04.png')"></a>
+                <div class="post__desc"> <a href="#" class="post__text">Dentist (Practice Owner)</a> <a href="#" class="post__text">Belgrade, Serbia</a> <a href="#" class="post__desc-link">Add Friend</a> </div>
               </div>
-              <div class="post__field">
-                <div class="post__name">Dennis Adams</div>
-                <div class="post__img"><img src="img/photo-01.png" alt=""></div>
-                <div class="post__desc">
-                  <div class="post__text">Dentist (Practice Owner)</div>
-                  <div class="post__text">London, England</div> <a href="#" class="post__desc-link">Add Friend</a> </div>
+              <div class="post">
+                <div class="post__name">Danielle Salazar</div> <a href="#" class="post__img" style="background-image: url('../img/photo-05.png')"></a>
+                <div class="post__desc"> <a href="#" class="post__text">Dentist (Practice Owner)</a> <a href="#" class="post__text">Paris, France</a> <a href="#" class="post__desc-link">Add Friend</a> </div>
               </div>
             </div>
-            <div class="post">
-              <div class="post__title">Featured Companies</div> <a href="#" class="post__link">See All</a>
-              <div class="post__field">
-                <div class="post__name">Product Name</div>
-                <div class="post__img"><img src="img/photo-06.png" alt=""></div>
-                <div class="post__desc">
-                  <div class="post__text">Product Short Description. The quick brown fox jumps over the lazy dog.</div>
-                </div>
+            <div class="posts">
+              <div class="posts__title">Featured Companies</div> <a href="#" class="posts__link">See All</a>
+              <div class="post">
+                <div class="post__name">Product Name</div> <a href="#" class="post__img" style="background-image: url('../img/photo-06.png');"></a>
+                <div class="post__desc"> <a href="#" class="post__text">Product Short Description. The quick brown fox jumps over a lazy dog.</a> </div>
               </div>
-              <div class="post__field">
-                <div class="post__name">Product Name</div>
-                <div class="post__img"><img src="img/photo-07.png" alt=""></div>
-                <div class="post__desc">
-                  <div class="post__text">Product Short Description. The quick brown fox jumps over the lazy dog.</div>
-                </div>
+              <div class="post">
+                <div class="post__name">Product Name</div> <a href="#" class="post__img" style="background-image: url('../img/photo-07.png');"></a>
+                <div class="post__desc"> <a href="#" class="post__text">Product Short Description. The quick brown fox jumps over a lazy dog.</a> </div>
               </div>
             </div>
+            <!-- END .posts -->
             <div class="banner">
-              <div class="banner__title">Advertisement</div>
-              <div class="banner__img" style="background-image: url('img/banner-01.jpg');"></div> <small class="banner__caption">Ads By <a href="#">Denteez.com</a></small> </div>
+              <div class="banner__title">Advertisement</div> <a href="#" class="banner__img" style="background-image: url('img/banner-01.jpg');"></a> <small class="banner__caption">Ads By <a href="#">Denteez.com</a></small> </div>
+            <!-- END .banner -->
           </aside>
-          <!-- END .sidebar__right -->
+          <!-- END .sidebar_right -->
           <section class="content">
             <div class="features">
-              <h2 class="title-xl features__title">Service Directory</h2> <a href="#" class="btn btn-green btn-rounded features__btn">Add New Service</a> </div>
+              <h2 class="title-xl features__title">Service Directory</h2> <a href="#" class="btn btn_green btn_rounded features__btn">Add New Service</a> </div>
             <ul class="list list-service">
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-00"></i></div>
+                  <div class="list-service__icon"> <i class="icon-calc"></i> </div>
                   <div class="list-service__caption">Accountancy</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-01"></i></div>
+                  <div class="list-service__icon"> <i class="icon-crest"></i> </div>
                   <div class="list-service__caption">Associations</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-02"></i></div>
-                  <div class="list-service__caption">Buy/Sell Dental <br> Practice</div>
+                  <div class="list-service__icon"> <i class="icon-dollar"></i> </div>
+                  <div class="list-service__caption">Buy/Sell Dental Practice</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-03"></i></div>
-                  <div class="list-service__caption">Clinical Waste <br> Collection</div>
+                  <div class="list-service__icon"> <i class="icon-basket"></i> </div>
+                  <div class="list-service__caption">Clinical Waste Collection</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-04"></i></div>
+                  <div class="list-service__icon"> <i class="icon-computer"></i> </div>
                   <div class="list-service__caption">Computer Service</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-05"></i></div>
-                  <div class="list-service__caption">CPR/Basic Life <br> Support Training</div>
+                  <div class="list-service__icon"> <i class="icon-lifebuoy"></i> </div>
+                  <div class="list-service__caption">CPR/Basic Life Support Training</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-06"></i></div>
+                  <div class="list-service__icon"> <i class="icon-userplus"></i> </div>
                   <div class="list-service__caption">Dental Recruitment</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-07"></i></div>
+                  <div class="list-service__icon"> <i class="icon-software"></i> </div>
                   <div class="list-service__caption">Dental Software</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-08"></i></div>
-                  <div class="list-service__caption">Electrical Safety <br> And Testing</div>
+                  <div class="list-service__icon"> <i class="icon-shield"></i> </div>
+                  <div class="list-service__caption">Electrical Safety And Testing</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-09"></i></div>
+                  <div class="list-service__icon"> <i class="icon-marketing"></i> </div>
                   <div class="list-service__caption">Marketing</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-10"></i></div>
+                  <div class="list-service__icon"> <i class="icon-lupe"></i> </div>
                   <div class="list-service__caption">Others</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-11"></i></div>
+                  <div class="list-service__icon"> <i class="icon-repair"></i> </div>
                   <div class="list-service__caption">Repairs</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-00"></i></div>
+                  <div class="list-service__icon"> <i class="icon-hammer"></i> </div>
                   <div class="list-service__caption">Solicitors</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-01"></i></div>
+                  <div class="list-service__icon"> <i class="icon-homeedit"></i> </div>
                   <div class="list-service__caption">Surgery Design</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-02"></i></div>
-                  <div class="list-service__caption">Training &amp; Courses</div>
+                  <div class="list-service__icon"> <i class="icon-training"></i> </div>
+                  <div class="list-service__caption">Training &amp;amp; Courses</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-03"></i></div>
+                  <div class="list-service__icon"> <i class="icon-webtag"></i> </div>
                   <div class="list-service__caption">Web Designers</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-04"></i></div>
+                  <div class="list-service__icon"> <i class="icon-cleaning"></i> </div>
                   <div class="list-service__caption">Cleaning Agencies</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-05"></i></div>
-                  <div class="list-service__caption">Dental Chair <br> Recovery</div>
+                  <div class="list-service__icon"> <i class="icon-chair"></i> </div>
+                  <div class="list-service__caption">Dental Chair Recovery</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-06"></i></div>
-                  <div class="list-service__caption">Equipment <br> Engineering</div>
+                  <div class="list-service__icon"> <i class="icon-equip"></i> </div>
+                  <div class="list-service__caption">Equipment Engineering</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-07"></i></div>
+                  <div class="list-service__icon"> <i class="icon-goldbar"></i> </div>
                   <div class="list-service__caption">Selling Gold</div>
                 </a>
               </li>
               <li class="list-service__item">
                 <a href="#" class="list-service__container">
-                  <div class="list-service__icon"><i class="icon-list-08"></i></div>
-                  <div class="list-service__caption">Uniform &amp; Workwear</div>
+                  <div class="list-service__icon"> <i class="icon-uniform"></i> </div>
+                  <div class="list-service__caption">Uniform &amp;amp; Workwear</div>
                 </a>
               </li>
             </ul>

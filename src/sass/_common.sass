@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p, strong, em
 	+font-family($proxima-reg)
 
 // post
-.post
+.posts
 	text-align: left
 	font-size: $text-sm //14px
 	+clr
@@ -44,43 +44,42 @@ h1, h2, h3, h4, h5, h6, p, strong, em
 		&:hover
 			text-decoration: underline
 			color: darken($blue-darker, 20)
-	&__field
+	.post
 		font-size: 0
 		+clr
 		margin-bottom: 20px
 		> .post__name
 			margin-bottom: 5px
-	&__img
-		width: 80px
-		height: 80px
-		overflow: hidden
-		display: inline-block
-		vertical-align: top
-		border-radius: 3px
-		position: relative
-		float: left
-		margin-right: 10px
-		img
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-	&__desc
-		display: table-cell
-		line-height: 1.33
-		max-width: 125px
-		&-link
-			font-size: $text-xs
-			color: $blue-darker
-			text-decoration: none
+		&__desc
+			display: table-cell
+			line-height: 1.33
+			max-width: 125px
+			&-link
+				font-size: $text-xs
+				color: $blue-darker
+				text-decoration: none
+				display: inline-block
+		&__img
+			width: 80px
+			height: 80px
 			display: inline-block
-	&__name
-		color: $blue-darker
-		display: block
-		font-size: $text-reg //16px
-	&__text
-		color: $blue-gray
-		font-size: $text-sm //14px
+			vertical-align: top
+			border-radius: 3px
+			float: left
+			+cover
+			margin-right: 10px
+		&__name
+			color: $blue-darker
+			display: block
+			font-size: $text-reg //16px
+		&__text
+			color: $blue-gray
+			font-size: $text-sm //14px
+			display: block
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+
 
 // footer
 .footer

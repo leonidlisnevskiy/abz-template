@@ -3,19 +3,19 @@
 		<a href="page.html" class="logo" title="Home"></a>
 
 		<div class="search">
-			{{mixins.icon('search', 'search__icon')}}
 			<input type="text" class="search__input" placeholder="Company Name">
+			{{mixins.icon('search', 'search__icon')}}
 		</div>
 
 		<div class="header__bar">
-			<a href="#" class="header__bar-link"><span class="header__bar-icon">{{mixins.icon('chat')}}</span></a>
-			<a href="#" class="header__bar-link"><span class="header__bar-icon">{{mixins.icon('notify')}}</span></a>
+			<a href="#" class="header__bar-link">{{mixins.icon('chat')}}</a>
+			<a href="#" class="header__bar-link">{{mixins.icon('notify')}}</a>
 		</div>
 
-		<div class="header__user">
-			<div class="header__user-ava"><img src="img/ava.png" alt="user avatar"></div>
-			<a  href="#" class="header__user-name">Maximillian Beekeeper</a>
-		</div>
+		<a href="#" class="header__user">
+			<div class="header__user-ava" style="background-image: url('../img/ava.png');"></div>
+			<div class="header__user-name">Maximillian Beekeeper</div>
+		</a>
 	</div>
 </header>
 <!-- END .header -->
