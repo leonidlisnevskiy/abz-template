@@ -1,0 +1,66 @@
+---
+title: template
+bodyClasses: preview-wrapper
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<header class="header header__overlay">
+	<div class="inner header__in">
+		<div class="header__nav">
+			<a href="#" class="logo"></a>
+
+			<a href="#" class="btn btn_green btn_rounded btn_login">Log In Now</a>
+		</div>
+		<!-- END .header_nav -->
+
+
+		<div class="header__desc">
+			<h2 class="title-lg">Home of Dentistry</h2>
+			<p>Denteez was created by dentists for dentistry in order to make the life of everyone involved in dentistry easier.</p>
+		</div>
+	</div>
+</header>
+<!-- END .header -->
+
+<main class="main">
+	<div class="inner">
+		<form action="" class="form">
+			<div class="form__title">Fields marked “*” are required</div>
+			<div class="form__field">
+				<div class="form__label" for="form-other">Enquiry Type *</div>
+				<div class="select-wrapper">
+					<select name="" id="form-other" class="js-select">
+						<option value="">Other</option>
+						<option value="">Other</option>
+						<option value="">Other</option>
+						<option value="">Other</option>
+					</select>
+				</div>
+
+			</div>
+			<div class="form__field">
+				<label class="form__label" for="form-title">Label</label>
+				<input type="text" class="input">
+			</div>
+			<div class="form__field">
+				<label class="form__label" for="form-title">Label</label>
+				<input type="text" class="input">
+			</div>
+			<div class="form__field">
+				<label class="form__label" for="form-title">Label</label>
+				<input type="text" class="input">
+			</div>
+			<div class="form__field">
+				<label class="form__label" for="form-title">Label</label>
+				<input type="text" class="input">
+			</div>
+			<div class="form__field">
+				<label class="form__label" for="form-title">Label</label>
+				<input type="text" class="input">
+			</div>
+		</form>
+	</div>
+</main>
+{% endblock %}

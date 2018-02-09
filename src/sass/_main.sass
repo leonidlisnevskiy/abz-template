@@ -75,3 +75,56 @@
 		a:hover
 			text-decoration: underline
 			color: $green-darker
+
+
+
+
+body.preview-wrapper
+	.header
+		padding-top: 40px
+		border: none
+		background-image: url('../img/bg-preview.jpg')
+		background-repeat: no-repeat
+		background-size: cover
+		&__overlay
+			position: relative
+			&:before
+				position: absolute
+				content: ''
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				display: block
+				z-index: 0
+				background-color: rgba(#1c2534, 0.9)
+		&__in
+			+clr
+			max-width: 1380px
+			padding: 0 20px
+			position: relative
+			z-index: 5
+		&__nav
+			display: inline-block
+			width: 100%
+			+clr
+			vertical-align: top
+			.logo
+				float: left
+			.btn_login
+				float: right
+				margin-top: 5px
+		&__desc
+			padding: 100px 0 195px
+			text-align: center
+			max-width: 490px
+			margin: 0 auto
+			+font-family($proxima-light)
+			.title-lg
+				color: $white-light
+			p
+				font-size: 20px
+				color: $white-light
+				line-height: 1.2
+				margin-top: 15px
+
