@@ -80,6 +80,8 @@
 
 
 body.preview-wrapper
+	.inner
+		max-width: 1280px
 	.header
 		padding-top: 40px
 		border: none
@@ -127,3 +129,42 @@ body.preview-wrapper
 				color: $white-light
 				line-height: 1.2
 				margin-top: 15px
+	.register
+		background-image: url('../img/bg-content.jpg')
+		+cover
+	.about
+		padding-top: 99px
+		border-top: 1px solid $separator
+		border-bottom: 1px solid $separator
+		padding-bottom: 112px
+		&__title
+			font-size: $text-lead //30px
+			color: $blue-darker
+			+font-family($proxima-light)
+			margin-bottom: 50px
+		.grid__item
+			max-width: 600px
+			text-align: left
+	.footer
+		padding: 34px 0 30px 0
+		background-color: $white
+		margin-top: 0
+		.copyright
+			display: inline-block
+			vertical-align: top
+		&__list
+			font-size: 0
+			float: right
+			li
+				display: inline-block
+				vertical-align: top
+				&:not(:last-child)
+					margin-right: 20px
+			li a
+				font-size: $text-xs //12px
+				color: #b7bfcd
+				transition: color .24s ease-in-out
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+					color: darken(#b7bfcd, 10)
