@@ -9,14 +9,13 @@ input.error
 .textarea
 	width: 100%
 	resize: none
+	background-color: $white
 	font-size: $text-reg //16px
-	border: 1px solid $white
-	+placeholder-color($white)
-	box-shadow: inset 0 0 30px 5px rgba(62, 53, 42, .11)
-	padding: 24px 24px 24px 38px
-	letter-spacing: 0.200rem
-	text-transform: uppercase
-	transition: border-color .32s ease, box-shadow .42s ease
+	border: 1px solid #c8cdd5
+	+font-family($proxima-reg)
+	+placeholder-color($blue-gray)
+	border-radius: 4px
+	padding: 20px
 
 .input
 	&-field
@@ -31,5 +30,11 @@ input.error
 	margin: 0
 	font-size: $text-reg //16px
 	width: 100%
-	padding: 0
-	+placeholder-color($white)
+	border: 1px solid #c8cdd5
+	padding: 20px 20px 19px 19px
+	+placeholder-color($blue-gray)
+	border-radius: 4px
+	&.disabled
+		cursor: not-allowed
+		cursor: no-drop
+		+nosel

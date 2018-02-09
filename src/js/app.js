@@ -6,8 +6,10 @@ svg4everybody();
 
 $(document).ready(function() {
 
-  $('js-select').select2({
-    minimumResultsForSearch: -1
+  $('.js-select').select2({
+    minimumResultsForSearch: -1,
+    width: '100%',
+    height: '100%',
   });
 
   $('textarea, input').each(function() {

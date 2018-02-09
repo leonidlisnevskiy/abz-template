@@ -3,7 +3,9 @@ title: template
 bodyClasses: preview-wrapper
 ---
 {% extends "layouts/_layout.html" %}
-
+{% block vendorCSS%}
+<link rel="stylesheet" href="lib/select2.min.css">
+{% endblock %}
 {% block content %}
 
 <header class="header header__overlay">
@@ -30,6 +32,7 @@ bodyClasses: preview-wrapper
 			<div class="form__title">Fields marked “*” are required</div>
 			<div class="form__field">
 				<div class="form__label" for="form-other">Enquiry Type *</div>
+
 				<div class="select-wrapper">
 					<select name="" id="form-other" class="js-select">
 						<option value="">Other</option>
@@ -38,27 +41,32 @@ bodyClasses: preview-wrapper
 						<option value="">Other</option>
 					</select>
 				</div>
+			</div>
 
+			<div class="form__field">
+				<input type="text" class="input disabled" disabled="true" value="Other">
+			</div>
+
+			<div class="form__row">
+				<div class="form__field">
+					<label class="form__label" for="form-name">Name *</label>
+					<input type="text" class="input" id="form-name" placeholder="Dentist">
+				</div>
+
+				<div class="form__field">
+					<label class="form__label" for="form-email">Email *</label>
+					<input type="email" class="input" id="form-email" placeholder="rachelm@gmail.com">
+				</div>
 			</div>
 			<div class="form__field">
-				<label class="form__label" for="form-title">Label</label>
-				<input type="text" class="input">
+				<label class="form__label" for="form-theme">Subject *</label>
+				<input type="text" class="input" id="form-theme">
 			</div>
+
 			<div class="form__field">
-				<label class="form__label" for="form-title">Label</label>
-				<input type="text" class="input">
-			</div>
-			<div class="form__field">
-				<label class="form__label" for="form-title">Label</label>
-				<input type="text" class="input">
-			</div>
-			<div class="form__field">
-				<label class="form__label" for="form-title">Label</label>
-				<input type="text" class="input">
-			</div>
-			<div class="form__field">
-				<label class="form__label" for="form-title">Label</label>
-				<input type="text" class="input">
+				<label class="form__label" for="form-desc">Description *</label>
+				<div class="js-counter counter">(0/1000)</div>
+				<textarea name="" id="" cols="30" rows="6" class="textarea"></textarea>
 			</div>
 		</form>
 	</div>

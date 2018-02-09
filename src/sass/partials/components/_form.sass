@@ -1,12 +1,65 @@
 .form
 	+clr
+	background-color: $white
+	border-radius: 5px
+	position: relative
+	padding: 19px
+	top: -100px
+	max-width: 760px
+	margin: 0 auto
+	border: 1px solid #e0e2e6
+	z-index: 10
+	&__title
+		text-align: left
+		color: #c1c1c1
+		font-size: $text-reg //16px
+		margin-bottom: 7px
+	&__row
+		display: inline-block
+		width: 100%
+		font-size: 0
+		+clr
+		& > .form__field
+			display: inline-block
+			width: 100%
+			max-width: 345px
+			float: left
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
 	&__field
 		vertical-align: top
+		text-align: left
+		margin-bottom: 20px
+		+clr
 	&__label
+		margin-bottom: 10px
 		color: $blue-darker
+		display: inline-block
 		font-size: $text-reg //16px
 		+font-family($proxima-reg)
+	.counter
+		color: $blue-darker
+		+font-family($proxima-reg)
+		font-size: $text-reg //16px
+		display: inline-block
+		float: right
 
+.select
+	&-wrapper
+		text-align: left
 
+.select2
+	&-container .select2-selection--single .select2-selection__rendered
+		padding-left: 19px
 
-
+.select2-container
+	.select2-selection--single
+		height: 52px
+	&--default
+		.select2-selection--single
+			border-color: #c8cdd5
+		.select2-selection--single .select2-selection__rendered
+			line-height: 52px
+		.select2-selection--single .select2-selection__arrow
+			height: 52px
