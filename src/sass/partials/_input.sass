@@ -1,10 +1,9 @@
-input.error,
-input.valid,
-select.error,
-select.valid
-	background-position: right 24px center
-input.error
-	border-color: red !important
+.input,
+.textarea
+	&.error
+		border-color: $red !important
+	&.valid
+		border-color: $green
 
 .textarea
 	width: 100%
@@ -28,6 +27,7 @@ input.error
 	padding: 16px 20px 16px 19px
 	+placeholder-color($blue-gray)
 	color: $blue-gray
+	transition: border-color .24s ease-in-out
 	border-radius: 4px
 	&.disabled
 		cursor: not-allowed
@@ -44,12 +44,28 @@ input.error
 		overflow: hidden
 		input
 			font-size: 0
+			display: none
+			opacity: 0
 		&.is-error
 			.is-hidden
 				opacity: 1
 				display: block
 			.input-file__content
 				padding: 0 15px 0
+		&__img
+			display: none
+			position: relative
+			z-index: 4
+			opacity: 0
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+			width: 130px
+			height: 130px
+			transition: opacity .24s ease-in-out
+			&.is-visible
+				display: inline-block
+				opacity: 1
 		&__content
 			z-index: 3
 			display: block
@@ -82,3 +98,17 @@ input.error
 			right: 0
 			bottom: 0
 			display: block
+
+.has-error
+	position: relative
+.help-block
+	opacity: 0
+	position: absolute
+	top: 100%
+	left: 0
+	display: block
+	transition: opacity .24s ease-in-out
+	&.form-error
+		font-size: $text-xs //12px
+		color: $red
+		opacity: 1

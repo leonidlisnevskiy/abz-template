@@ -28,28 +28,29 @@
       <main class="main">
         <div class="register">
           <div class="inner">
-            <form action="" class="form" id="myform">
+            <form action="" class="form js-form">
               <div class="form-container">
                 <div class="form__title">Fields marked “*” are required</div>
                 <div class="form__field">
                   <div class="form__label" for="form-other">Enquiry Type *</div>
                   <div class="select-wrapper"> <select name="" id="form-other" class="js-select">
 								<option value="">Other</option>
-								<option value="">Other</option>
-								<option value="">Other</option>
-								<option value="">Other</option>
+								<option value="">Other 2</option>
+								<option value="">Other 3</option>
+								<option value="">Other 4</option>
 							</select> </div>
-                </div>
-                <div class="form__field"> <input type="text" class="input" value="Other"> </div>
+                  <!-- <div class="js-result"></div> --></div>
+                <div class="form__field"> <input type="text" class="input js-result" value="Other" disabled="disabled"> </div>
                 <div class="form__row">
-                  <div class="form__field"> <label class="form__label" for="form-name">Name *</label> <input type="text" class="input" id="form-name" placeholder="Dentist" required="required"> </div>
-                  <div class="form__field"> <label class="form__label" for="form-email">Email *</label> <input type="email" class="input" id="form-email" placeholder="rachelm@gmail.com" required="required"> </div>
+                  <div class="form__field"> <label class="form__label" for="user-name">Name *</label> <input type="text" class="input" id="user-name" placeholder="Dentist" required="required" data-validation="required" data-validation-error-msg="Please enter a valid name!"> </div>
+                  <div class="form__field"> <label class="form__label" for="user-email">Email *</label> <input type="email" class="input" id="user-email" placeholder="rachelm@gmail.com" required="required" data-validation="email" data-validation-error-msg="Please enter a valid email address!">                    </div>
                 </div>
-                <div class="form__field"> <label class="form__label" for="form-theme">Subject *</label> <input type="text" class="input" id="form-theme" required="required"> </div>
-                <div class="form__field"> <label class="form__label" for="form-desc">Description *</label>
-                  <div class="counter">(<span class="js-counter">0</span>/1000)</div> <textarea name="" id="description" maxlength="1000" cols="30" rows="6" class="textarea" required="required"></textarea> </div> <label class="input-file js-input-file">
+                <div class="form__field"> <label class="form__label" for="user-theme">Subject *</label> <input type="text" class="input" id="user-theme" required="required" data-validation="required" data-validation-error-msg="Please enter a subject!"> </div>
+                <div class="form__field">
+                <label class="form__label" for="user-desc">Description *</label>
+                  <div class="counter">(<span class="js-counter">0</span>/1000)</div> <textarea maxlength="1000" id="user-desc" cols="30" rows="6" class="js-description textarea" required="required" data-validation="required"></textarea> </div> <label class="input-file js-input-file">
 						<input type="file" class="js-input-file-field">
-
+						<div class="js-upload-image input-file__img" style=""></div>
 						<span class="input-file__btn"></span>
 						<span class="input-file__content">
 							<span class="add">Add photo</span>
