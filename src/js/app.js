@@ -18,7 +18,6 @@ $(document).ready(function() {
       if (field.get(0).files[0].size/1000000 > 5) {
         file.addClass(ERROR);
         $('.js-upload-image').removeClass('is-visible');
-
       } else {
         file.removeClass(ERROR);
         $('.js-upload-image').addClass('is-visible').css('background-image', 'url("' + URL.createObjectURL(event.target.files[0]) + '")');
@@ -26,9 +25,9 @@ $(document).ready(function() {
     });
   });
 
-  $('.js-description').keyup(function() {
-    var textLength = $('.js-description').val().length;
-    $('.js-counter').html(textLength);
+  $('.js-description').on('input', function(e) {
+    var textLength = $(this).val().length;
+    $(this).parent().find('.js-counter').html(textLength);
   });
 
   $('.js-select').select2({
